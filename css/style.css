@@ -1,0 +1,365 @@
+header {
+  height: 700px;
+  width: 100%;
+  background-color: #223047; }
+  header .header_logo {
+    margin-top: 15px; }
+  header .nav-button {
+    margin-top: 15px;
+    width: 137px;
+    height: 40px;
+    border-radius: 7px;
+    background-color: #00fff0; }
+  header .header_menu {
+    margin-top: 15px; }
+    header .header_menu li a {
+      color: white;
+      font-size: 16px;
+      letter-spacing: 0px;
+      line-height: 29px;
+      color: #ffffff;
+      font-family: "Dosis";
+      margin-right: 30px; }
+  header .header_headText {
+    font-size: 35px;
+    letter-spacing: 1px;
+    line-height: 49px;
+    color: #ffffff;
+    font-family: "Dosis";
+    margin-bottom: 38px; }
+  header .header_text {
+    width: 417px;
+    height: 77px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #97a4be;
+    font-family: "Dosis";
+    margin-bottom: 60px; }
+  header .header-right {
+    position: absolute;
+    left: 125px;
+    top: 101px; }
+  header .header_btn {
+    width: 168px;
+    height: 39px;
+    border-radius: 7px;
+    background-color: #00fff0;
+    font-size: 16px;
+    color: #233148;
+    font-family: "Dosis";
+    margin-right: 20px; }
+  header .header_btn-blue {
+    width: 150px;
+    height: 39px;
+    font-size: 16px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #ffffff;
+    font-family: "Dosis";
+    background-color: #223047;
+    border-color: white; }
+  header .header_iphone {
+    position: absolute;
+    top: 75px; }
+
+.powerApp {
+  padding-bottom: 90px; }
+  .powerApp .powerApp_text {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #223047;
+    font-family: "Dosis";
+    text-align: center;
+    margin-top: 120px;
+    padding-bottom: 150px; }
+    .powerApp .powerApp_text::before {
+      position: absolute;
+      content: "";
+      top: 252px;
+      left: 500px;
+      width: 100px;
+      height: 5px;
+      background-color: #00fff0; }
+  .powerApp .powerApp_cart {
+    width: 270px;
+    height: 321px;
+    border-radius: 5px;
+    box-shadow: 1px 1.732px 5px rgba(30, 43, 63, 0.1);
+    background-color: #ffffff;
+    margin-left: 15px; }
+    .powerApp .powerApp_cart .powerApp_cart-img {
+      max-height: 100%;
+      max-width: 100%;
+      margin-left: 71px;
+      margin-bottom: 20px; }
+    .powerApp .powerApp_cart .powerApp_cart-header {
+      font-size: 17px;
+      text-align: center;
+      line-height: 50px;
+      color: #223047;
+      font-family: "Dosis"; }
+    .powerApp .powerApp_cart .powerApp_cart-text {
+      width: 220px;
+      height: 79px;
+      font-size: 14px;
+      letter-spacing: 0px;
+      line-height: 29px;
+      color: #97a4be;
+      font-family: "Dosis";
+      text-align: center;
+      margin-left: 15px; }
+
+.moreInf {
+  width: 100%;
+  margin-bottom: 100px; }
+  .moreInf .right-side--margin {
+    margin-left: 60px;
+    margin-top: 70px; }
+  .moreInf .moreInf_left-side {
+    background-color: #223047;
+    height: 375px; }
+  .moreInf .moreInf_right-side {
+    background-color: #f5f6fa;
+    margin-left: -15px; }
+    .moreInf .moreInf_right-side .right-side-headText {
+      font-size: 30px;
+      letter-spacing: 1px;
+      line-height: 40px;
+      color: #000000;
+      font-family: "Dosis";
+      font-family: "Dosis"; }
+    .moreInf .moreInf_right-side .right-side-text {
+      width: 469px;
+      height: 141px;
+      font-size: 14px;
+      letter-spacing: 0px;
+      line-height: 29px;
+      color: #97a4be;
+      font-family: "Dosis"; }
+
+.stable__Ready .first__row {
+  text-align: right;
+  margin-bottom: 100px; }
+.stable__Ready .first__row--headtext {
+  font-size: 30px;
+  letter-spacing: 1px;
+  line-height: 40px;
+  color: #000000;
+  font-family: "Dosis";
+  text-align: right; }
+.stable__Ready .first__row--text {
+  height: 141px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 29px;
+  color: #97a4be;
+  font-family: "Dosis";
+  text-align: right;
+  margin-bottom: 50px; }
+.stable__Ready .first__row--button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: #00fff0;
+  font-size: 17px;
+  color: #223047;
+  font-family: "Dosis"; }
+.stable__Ready .second__row--img {
+  position: absolute;
+  left: 235px; }
+.stable__Ready .second__row--list {
+  list-style: none;
+  background-color: none; }
+.stable__Ready .second__row--list--center {
+  display: table-cell;
+  vertical-align: middle; }
+.stable__Ready .second__row--list li {
+  width: 542px;
+  height: 78px;
+  box-shadow: 2px 3.464px 10px rgba(35, 39, 51, 0.1);
+  margin-bottom: 40px;
+  display: table; }
+  .stable__Ready .second__row--list li:hover {
+    width: 542px;
+    height: 137px;
+    box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+    background-color: #00fff0;
+    transition-duration: 0.5s; }
+.stable__Ready .second__row--list i {
+  margin-left: 30px;
+  font-size: 20px; }
+.stable__Ready .second__row--list li h6 {
+  display: inline-block;
+  margin-left: 15px;
+  font-size: 17px;
+  letter-spacing: 0px;
+  line-height: 38px;
+  color: #223047;
+  font-family: "Dosis"; }
+.stable__Ready .second__row--list li p {
+  width: 379px;
+  height: 45px;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 28px;
+  color: #233148;
+  font-family: "Dosis";
+  margin-left: 68px; }
+
+.android__iphone {
+  height: 470px;
+  background-color: #f5f6fa; }
+  .android__iphone .android_iphone--headtext {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    color: #000000;
+    font-family: "Dosis";
+    text-align: right;
+    margin-bottom: 15px;
+    margin-top: 130px;
+    margin-bottom: 45px; }
+  .android__iphone .android_iphone--list {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 20px;
+    margin-bottom: 30px; }
+    .android__iphone .android_iphone--list .android_iphone--list li {
+      font-size: 17px;
+      line-height: 50px;
+      color: #000000;
+      font-family: "Dosis";
+      text-align: center;
+      list-style-type: none;
+      margin-left: 5px; }
+    .android__iphone .android_iphone--list .list--icon {
+      margin-right: 14px;
+      content: "\f00c";
+      background-color: #00fff0;
+      border-radius: 50%;
+      border: 1x solid grey;
+      padding: 5px; }
+  .android__iphone .android_iphone--text {
+    width: 469px;
+    height: 141px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #97a4be;
+    font-family: "Dosis";
+    text-align: right; }
+  .android__iphone .android__iphone--white__image {
+    height: 278px;
+    position: absolute;
+    top: 215px;
+    left: 45px; }
+  .android__iphone .android__iphone--black__image {
+    height: 380px;
+    position: absolute;
+    top: 112px;
+    left: 150px; }
+
+.video {
+  text-align: center;
+  height: 550px;
+  background-color: #223047; }
+  .video img {
+    margin-top: 10%;
+    margin-bottom: 2%; }
+  .video .video--headtext {
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 40px;
+    color: #ffffff;
+    font-family: "Dosis";
+    font-weight: 300;
+    margin-bottom: 2%; }
+  .video .video--text {
+    height: 141px;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #ffffff;
+    font-family: "Dosis";
+    text-align: center; }
+
+.join {
+  background-position: center;
+  text-align: center;
+  height: 500px;
+  background-image: url("../img/map.png");
+  background-repeat: no-repeat; }
+  .join .join--headtext {
+    margin-top: 140px;
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: #223047;
+    font-family: "Dosis"; }
+  .join .join--text {
+    margin-top: 10px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #223047;
+    font-family: "Dosis";
+    font-weight: 300; }
+  .join .join--button {
+    height: 50px;
+    box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+    background-color: #00fff0;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #223047;
+    font-family: "Dosis";
+    margin-top: 30px; }
+
+.only__text {
+  height: 270px;
+  background-color: #223047; }
+  .only__text .text {
+    margin-top: 10%;
+    height: 141px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #00fff1;
+    font-family: "Dosis";
+    text-align: center; }
+
+.available {
+  display: table; }
+  .available .available__headtext {
+    font-size: 40px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: #223047;
+    font-family: "Dosis";
+    margin-left: 45px;
+    padding-top: 69px; }
+  .available .available__text {
+    height: 30px;
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #97a4be;
+    font-family: "Dosis";
+    font-weight: 300;
+    margin-left: 45px; }
+  .available .available--padding {
+    padding-top: 90px;
+    margin-left: 45px; }
+  .available .available__liphone {
+    position: absolute;
+    left: 170px;
+    top: 38px;
+    z-index: 1; }
+  .available .available__riphone {
+    position: absolute;
+    left: 345px;
+    top: 152px;
+    margin-right: 40px; }
+
+/*# sourceMappingURL=style.css.map */
