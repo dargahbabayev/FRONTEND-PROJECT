@@ -37,9 +37,7 @@ header {
     font-family: "Dosis";
     margin-bottom: 60px; }
   header .header-right {
-    position: absolute;
-    left: 125px;
-    top: 101px; }
+    margin-top: 120px; }
   header .header_btn {
     width: 168px;
     height: 39px;
@@ -330,7 +328,10 @@ header {
     text-align: center; }
 
 .available {
-  display: table; }
+  display: table;
+  background-color: #f5f6fa;
+  width: 100%;
+  height: 700px; }
   .available .available__headtext {
     font-size: 40px;
     letter-spacing: 1px;
@@ -338,7 +339,7 @@ header {
     color: #223047;
     font-family: "Dosis";
     margin-left: 45px;
-    padding-top: 69px; }
+    padding-top: 190px; }
   .available .available__text {
     height: 30px;
     font-size: 17px;
@@ -350,7 +351,11 @@ header {
     margin-left: 45px; }
   .available .available--padding {
     padding-top: 90px;
-    margin-left: 45px; }
+    margin-left: 5px; }
+    .available .available--padding .available--padding--list {
+      list-style-type: none; }
+      .available .available--padding .available--padding--list li {
+        display: inline; }
   .available .available__liphone {
     position: absolute;
     left: 170px;
@@ -361,5 +366,182 @@ header {
     left: 345px;
     top: 152px;
     margin-right: 40px; }
+  .available .available--button {
+    position: absolute;
+    left: 400px;
+    width: 370px;
+    top: 220px;
+    height: 70px;
+    box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+    background-color: #00fff0;
+    font-size: 17px;
+    line-height: 50px;
+    color: #233148;
+    font-family: "Dosis"; }
+
+.cols {
+  width: 100%;
+  height: 520px; }
+  .cols .cols--padding {
+    padding-top: 113px;
+    list-style-type: none; }
+    .cols .cols--padding .active {
+      font-size: 17px;
+      line-height: 50px;
+      color: #223047;
+      font-family: "Dosis"; }
+    .cols .cols--padding li {
+      list-style-type: none;
+      font-size: 14px;
+      letter-spacing: 0px;
+      line-height: 29px;
+      color: #97a4be;
+      font-family: "Dosis";
+      text-align: center; }
+  .cols .cols__headtext {
+    font-size: 30px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    color: #223047;
+    font-family: "Dosis";
+    text-align: center; }
+  .cols .cols__text {
+    font-size: 17px;
+    letter-spacing: 0px;
+    line-height: 29px;
+    color: #97a4be;
+    font-family: "Dosis";
+    font-weight: 300;
+    text-align: center;
+    padding-bottom: 45px; }
+  .cols .cols__search--right {
+    text-align: right; }
+  .cols .cols__search {
+    width: 570px;
+    height: 50px;
+    margin-left: 31px;
+    background-color: #f5f6fa;
+    width: 450px;
+    height: 50px;
+    background-color: #f5f6fa;
+    border: 0px solid #FF0000; }
+  .cols .cols__button {
+    height: 50px;
+    box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+    background-color: #00fff0;
+    font-size: 17px;
+    color: #233148;
+    font-family: "Dosis";
+    margin-left: 25px; }
+  .cols .cols__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row; }
+    .cols .cols__list li {
+      width: 245px; }
+
+footer {
+  background-color: #223047; }
+  footer .footer__headtext {
+    font-size: 17px;
+    line-height: 50px;
+    color: #00fff1;
+    font-family: "Dosis";
+    margin-top: 23px; }
+  footer .footer__list {
+    text-align: right;
+    text-align: right;
+    margin-top: 23px; }
+    footer .footer__list li {
+      list-style-type: none;
+      display: inline-block;
+      margin-left: 25px;
+      color: white; }
+
+@media (max-width: 575.98px) {
+  header .header_iphone {
+    display: none; }
+  header .header_headText {
+    font-size: 20px;
+    text-align: left;
+    margin-bottom: 20px; }
+  header .header_text {
+    width: 261px; }
+  header .header-right {
+    position: relative; }
+
+  .powerApp {
+    padding-bottom: 0px; }
+    .powerApp .powerApp_text {
+      font-size: 25px;
+      margin-top: 50px;
+      padding-bottom: 60px; }
+      .powerApp .powerApp_text::before {
+        display: none; }
+    .powerApp .powerApp_cart {
+      margin-left: 60px; }
+
+  .moreInf {
+    margin-bottom: 45px; }
+    .moreInf .moreInf_left-side {
+      display: none; }
+    .moreInf .moreInf_right-side {
+      background-color: #f5f6fa;
+      margin-left: -15px; }
+      .moreInf .moreInf_right-side .right-side-headText {
+        width: 100%;
+        height: 106px; }
+      .moreInf .moreInf_right-side .right-side-text {
+        width: 289px;
+        height: 250px; }
+
+  .stable__Ready .first__row--text {
+    margin-bottom: 80px; }
+  .stable__Ready .first__row img {
+    display: none; }
+  .stable__Ready .second__row--img {
+    display: none; }
+  .stable__Ready .second__row--list li {
+    width: 100%; }
+    .stable__Ready .second__row--list li p {
+      display: none; }
+
+  .android__iphone {
+    height: 336px; }
+    .android__iphone .android_iphone--headtext {
+      margin-top: 0px; }
+    .android__iphone .android__iphone--imgs {
+      display: none; }
+
+  .video {
+    height: 340px; }
+
+  .available {
+    height: 382px; }
+    .available .available__headtext {
+      padding-top: 20px; }
+    .available .available__liphone {
+      display: none; }
+    .available .available__riphone {
+      display: none; }
+    .available .available--button {
+      position: absolute;
+      left: 80px;
+      width: 258px;
+      top: 12px;
+      height: 55px; }
+
+  .cols {
+    height: 1000px; }
+    .cols .cols--padding {
+      padding-top: 28px; }
+      .cols .cols--padding .cols--main--list {
+        display: inline; }
+
+  footer {
+    margin-top: 23px; }
+    footer .footer__headtext {
+      text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */

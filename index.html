@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                     <img class="header_logo" src="img/appoLogo.png">
                 </div>
                 <div class="col-md-6">
-                    <div class="" id="navbarSupportedContent">
+                    <div class="header__menu " id="navbarSupportedContent">
                         <ul class="navbar-nav header_menu mr-auto text-center ml-10 navbartree">
                             <li class="nav-item dropdown">
                                 <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -52,7 +53,7 @@
         <hr>
         <div class="container">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-md-7 offset-md-1">
                     <div class="header-right">
                         <h3 class="header_headText">Choose a better way to
                             <br> represent your app
@@ -256,7 +257,7 @@
                         Curabitur aliquet quam id dui posuere blandit. Vestibulum ac diam sit amet quam.</p>
 
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 android__iphone--imgs">
 
                     <img class="android__iphone--white__image" src="img/whiteImg.png">
                     <img class="android__iphone--black__image" src="img/blackimg.png">
@@ -271,7 +272,10 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <img src="img/play.png" alt="">
+
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/embed/fbVD32w1oTo?enablejsapi=1">
+                        <img src="img/play.png" alt="">
+                    </a>
                 </div>
                 <div class="col-md-12">
                     <h4 class="video--headtext">WATCH THE VIDEO</h4>
@@ -302,7 +306,6 @@
             </div>
 
         </div>
-
     </section>
     <section class="only__text">
         <div class="container-fluid">
@@ -319,47 +322,41 @@
     </section>
 
     <sectionn class="available">
-
         <div class="container">
-
             <div class="row">
-
                 <div class="col-md-6">
                     <img class="available__liphone" src="img/liphone.png">
                     <img class="available__riphone" src="img/riphone.png">
                 </div>
                 <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <h3 class="available__headtext"> Now Available </h3>
-                        </div>
-                        <div class="col-md-12">
-                            <p class="available__text">
-                                Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula
-                                elementum sed sit amet dui. quam vehicula elementum sed sit ametsuada.
-                            </p>
-                        </div>
-                        <div class="row available--padding">
-
-                            <div class="col-md-6">
+                    <h3 class="available__headtext"> Now Available </h3>
+                    <p class="available__text">
+                        Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac diam sit amet quam vehicula
+                        elementum sed sit amet dui. quam vehicula elementum sed sit ametsuada.
+                    </p>
+                    <div class="available--padding">
+                        <ul class="available--padding--list">
+                            <li>
                                 <img class="apple" src="img/apple.png" alt="">
-                            </div>
-                            <div class="col-md-6">
+                            </li>
+                            <li>
                                 <img src="img/samsung.png" alt="">
-
-                            </div>
-                        </div>
-
+                            </li>
+                        </ul>
                     </div>
-
-
 
                 </div>
 
-
+                <div class="col-md-12">
+                    <button class="btn available--button" type="submit">GET THE APP TODAY</button>
+                </div>
 
             </div>
 
+
+
+        </div>
+        </div>
 
         </div>
 
@@ -367,9 +364,108 @@
 
 
     </sectionn>
+    <section class="cols">
+        <div class="container-fluid">
+            <ul class="cols--padding cols__list">
+                <li class="cols--main--list">
+                    <ul>
+                        <li class="active">Company</li>
+                        <li>Home</li>
+                        <li>Job</li>
+                        <li>Press</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="active">Development</li>
+                        <li>iOS</li>
+                        <li>Android</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="active">Marketing</li>
+                        <li>Advertising</li>
+                        <li>Referals</li>
+                        <li>Get Quote</li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="active">Community</li>
+                        <li>Social</li>
+                        <li>Forum</li>
+                        <li>Contact</li>
+                        <li>FAQ</li>
+                    </ul>
+                    <li>
+                        <ul>
+                            <li class="active">Info</li>
+                            <li>iOS</li>
+                            <li>Android</li>
+                        </ul>
 
+                    </li>
+                </li>
+        </div>
+        </ul>
+        <div class="row">
 
+            <div class="col-md-12">
+                <h2 class="cols__headtext">Get In Touch</h1>
+            </div>
+            <div class="col-md-12">
+                <h6 class="cols__text">Subscribe to our newsletter and get notification for upcoming cool sutff.</h6>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-md-7  cols__search--right">
+                <input class="cols__search" type="text" name="fname">
+            </div>
+            <div class="col-md-5">
+                <button class="btn  cols__button " type="submit">Count me in</button>
+            </div>
+
+        </div>
+        </div>
+
+    </section>
+    <footer>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <h4 class="footer__headtext"> © 2018 - Appo,All Right Reserved</h4>
+                </div>
+                <div class="col-md-9 col-sm-12">
+                    <ul class="footer__list">
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-google"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-youtube"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
 
 </body>
+
+<script src="js/main.js"></script>
+<script src="SlickNav/dist/jquery.slicknav.min.js"></script>
 
 </html>

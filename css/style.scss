@@ -48,9 +48,9 @@ header {
         margin-bottom: 60px;
     }
     .header-right {
-        position: absolute;
-        left: 125px;
-        top: 101px;
+        margin-top: 120px; // position: absolute;
+        // left: 125px;
+        // top: 101px;
     }
     .header_btn {
         width: 168px;
@@ -395,14 +395,17 @@ header {
 
 .available {
     display: table;
+    background-color: #f5f6fa;
+    width: 100%;
+    height: 700px;
     .available__headtext {
         font-size: 40px;
         letter-spacing: 1px;
         line-height: 50px;
-        color: $primary-color-2;
-        font-family: $first-font;
+        color: #223047;
+        font-family: "Dosis";
         margin-left: 45px;
-        padding-top: 69px;
+        padding-top: 190px;
     }
     .available__text {
         height: 30px;
@@ -416,22 +419,270 @@ header {
     }
     .available--padding {
         padding-top: 90px;
-        margin-left: 45px;
+        margin-left: 5px;
+        .available--padding--list {
+            list-style-type: none;
+            li {
+                display: inline;
+            }
+        }
     }
-
-
-    .available__liphone{
+    .available__liphone {
         position: absolute;
         left: 170px;
         top: 38px;
         z-index: 1;
     }
-
-    .available__riphone{
+    .available__riphone {
         position: absolute;
         left: 345px;
         top: 152px;
         margin-right: 40px;
-
+    }
+    .available--button {
+        position: absolute;
+        left: 400px;
+        width: 370px;
+        top: 220px;
+        height: 70px;
+        box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+        background-color: #00fff0;
+        font-size: 17px;
+        line-height: 50px;
+        color: #233148;
+        font-family: "Dosis";
     }
 }
+
+.cols {
+    width: 100%;
+    height: 520px;
+    .cols--padding {
+        padding-top: 113px;
+        list-style-type: none; // .cols--main--list{
+        //     display: inline;
+        // }
+        .active {
+            font-size: 17px;
+            line-height: 50px;
+            color: $primary-color-2;
+            font-family: $first-font;
+        }
+        li {
+            list-style-type: none;
+            font-size: 14px;
+            letter-spacing: 0px;
+            line-height: 29px;
+            color: #97a4be;
+            font-family: $first-font;
+            text-align: center;
+        }
+    }
+    .cols__headtext {
+        font-size: 30px;
+        letter-spacing: 1px;
+        line-height: 50px;
+        color: $primary-color-2;
+        font-family: $first-font;
+        text-align: center; // margin-top: 150px;
+    }
+    .cols__text {
+        font-size: 17px;
+        letter-spacing: 0px;
+        line-height: 29px;
+        color: #97a4be;
+        font-family: "Dosis";
+        font-weight: 300;
+        text-align: center;
+        padding-bottom: 45px;
+    }
+    .cols__search--right {
+        text-align: right;
+    }
+    .cols__search {
+        width: 570px;
+        height: 50px;
+        margin-left: 31px;
+        background-color: #f5f6fa;
+        width: 450px;
+        height: 50px;
+        background-color: #f5f6fa;
+        border: 0px solid #FF0000;
+    }
+    .cols__button {
+        height: 50px;
+        box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+        background-color: #00fff0;
+        font-size: 17px;
+        color: #233148;
+        font-family: "Dosis";
+        margin-left: 25px;
+    }
+    .cols__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: row;
+        li {
+            width: 245px;
+        }
+    }
+}
+
+footer {
+    background-color: #223047;
+    .footer__headtext {
+        font-size: 17px;
+        line-height: 50px;
+        color: #00fff1;
+        font-family: "Dosis";
+        margin-top: 23px;
+    }
+    .footer__list {
+        text-align: right;
+        text-align: right;
+        margin-top: 23px;
+        li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 25px;
+            color: white;
+        }
+    }
+}
+
+// MEDIA QUERIES
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    header {
+        .header_iphone {
+            display: none;
+        }
+        .header_headText {
+            font-size: 20px;
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .header_text {
+            width: 261px;
+        }
+        .header-right {
+            position: relative;
+        }
+    }
+    .powerApp {
+        padding-bottom: 0px;
+        .powerApp_text {
+            font-size: 25px;
+            margin-top: 50px;
+            padding-bottom: 60px;
+            &::before {
+                display: none;
+            }
+        }
+        .powerApp_cart {
+            margin-left: 60px;
+        }
+    }
+    .moreInf {
+        margin-bottom: 45px;
+        .moreInf_left-side {
+            display: none;
+        }
+        .moreInf_right-side {
+            background-color: #f5f6fa;
+            margin-left: -15px;
+            .right-side-headText {
+                width: 100%;
+                height: 106px;
+            }
+            .right-side-text {
+                width: 289px;
+                height: 250px;
+            }
+        }
+    }
+    .stable__Ready {
+        .first__row--text {
+            margin-bottom: 80px;
+        }
+        .first__row {
+            img {
+                display: none;
+            }
+        }
+        .second__row--img {
+            display: none;
+        }
+        .second__row--list {
+            li {
+                width: 100%;
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .android__iphone{
+        height: 336px;
+
+        .android_iphone--headtext{
+margin-top: 0px;
+        }
+    .android__iphone--imgs{
+        display: none;
+    }
+    }
+    .video{
+
+        height: 340px;
+
+
+    }
+
+    .available{
+        height: 382px;
+        .available__headtext {
+            padding-top: 20px
+        }
+        .available__liphone {
+          display: none;
+        }
+        .available__riphone {
+           display: none;
+        }
+        .available--button {
+            position: absolute;
+            left: 80px;
+            width: 258px;
+            top: 12px;
+            height: 55px;
+         
+        }
+    }
+    .cols{
+        height: 1000px;
+        .cols--padding {
+            padding-top: 28px;
+            .cols--main--list{
+                display: inline;
+                
+            }
+    }
+    }
+
+    footer{
+             margin-top: 23px; 
+        .footer__headtext{
+            text-align: center;
+        }
+    }
+}
+
+// // Small devices (landscape phones, less than 768px)
+// @media (max-width: 767.98px) { ... }
+// // Medium devices (tablets, less than 992px)
+// @media (max-width: 991.98px) { ... }
+// // Large devices (desktops, less than 1200px)
+// @media (max-width: 1199.98px) { ... }
