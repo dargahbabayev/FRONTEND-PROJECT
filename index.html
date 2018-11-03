@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:400,500,600,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.2.1.slim.min.jss">
 
 </head>
 
@@ -17,31 +18,41 @@
     <header>
         <div class="container">
             <!-- <div class="row"></div> -->
+            
             <div class="row navbar navbar-expand-lg navbar-light ">
+               
 
 
                 <div class="col-md-4">
                     <img class="header_logo" src="img/appoLogo.png">
                 </div>
+                <button class="navbar-toggler" data-togle="collapse" data-target="collapse_targer">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                   
                 <div class="col-md-6">
-                    <div class="header__menu " id="navbarSupportedContent">
-                        <ul class="navbar-nav header_menu mr-auto text-center ml-10 navbartree">
-                            <li class="nav-item dropdown">
-                                <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Home
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="#">Features</a>
-                            </li>
+                        <div class="collapse navbar-collapse" id="#collapse_target">
 
-                            <li class="nav-item">
-                                <a class=" disabled" href="#">Pricing</a>
-                            </li>
-                        </ul>
-
-
-                    </div>
+                                <div class="header__menu " id="navbarSupportedContent">
+                                        <ul class="navbar-nav header_menu mr-auto text-center ml-10 navbartree">
+                                            <li class="nav-item dropdown">
+                                                <a class=" dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                    Homes
+                                                </a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a href="#">Features</a>
+                                            </li>
+                
+                                            <li class="nav-item">
+                                                <a class=" disabled" href="#">Pricing</a>
+                                            </li>
+                                        </ul>
+                
+                
+                                    </div>
+    
+                        </div>
                 </div>
                 <div class="col-md-2">
                     <button class="btn  nav-button" type="submit">Get the app</button>
@@ -470,7 +481,8 @@
 
 </body>
 
-<script src="js/main.js"></script>
-<script src="SlickNav/dist/jquery.slicknav.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" ></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" ></script>
 
 </html>
