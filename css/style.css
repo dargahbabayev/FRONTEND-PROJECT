@@ -57,6 +57,8 @@ header {
     font-family: "Dosis";
     background-color: #223047;
     border-color: white; }
+  header .header__mobile__menu {
+    display: none; }
   header .header_iphone {
     position: absolute;
     top: 75px; }
@@ -86,8 +88,7 @@ header {
     height: 321px;
     border-radius: 5px;
     box-shadow: 1px 1.732px 5px rgba(30, 43, 63, 0.1);
-    background-color: #ffffff;
-    margin-left: 15px; }
+    background-color: #ffffff; }
     .powerApp .powerApp_cart .powerApp_cart-img {
       max-height: 100%;
       max-width: 100%;
@@ -100,7 +101,7 @@ header {
       color: #223047;
       font-family: "Dosis"; }
     .powerApp .powerApp_cart .powerApp_cart-text {
-      width: 80%;
+      width: 100%;
       height: 79px;
       font-size: 14px;
       letter-spacing: 0px;
@@ -108,7 +109,7 @@ header {
       color: #97a4be;
       font-family: "Dosis";
       text-align: center;
-      margin-left: 15px; }
+      padding: 7px; }
 
 .moreInf {
   width: 100%;
@@ -249,16 +250,18 @@ header {
     color: #97a4be;
     font-family: "Dosis";
     text-align: right; }
+  .android__iphone .android__iphone .android_iphone--headtext {
+    margin-top: 140px; }
   .android__iphone .android__iphone--white__image {
-    height: 278px;
+    height: 277px;
     position: absolute;
-    top: 215px;
-    left: 45px; }
+    top: 217px;
+    left: 43px; }
   .android__iphone .android__iphone--black__image {
-    height: 380px;
+    height: 359px;
     position: absolute;
-    top: 112px;
-    left: 150px; }
+    top: 131px;
+    left: 155px; }
 
 .video {
   text-align: center;
@@ -435,12 +438,13 @@ header {
     font-family: "Dosis";
     margin-left: 25px; }
   .cols .cols__list {
+    margin-left: 35px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: row; }
     .cols .cols__list li {
-      width: 245px; }
+      width: 20%; }
 
 footer {
   background-color: #223047; }
@@ -468,6 +472,16 @@ footer {
       font-size: 20px;
       text-align: left;
       margin-bottom: 20px; }
+    header .header__mobile__menu {
+      margin-left: 64%;
+      display: inline-block !important;
+      background-color: #223047;
+      color: white !important;
+      font-size: 21px;
+      margin-top: 5px;
+      border: 0; }
+    header .nav-button {
+      display: none; }
     header .header_text {
       width: 261px; }
     header .header-right {
@@ -539,20 +553,22 @@ footer {
   .cols {
     height: 735px; }
     .cols .cols__list li {
-      width: 50%; }
+      width: 33%; }
     .cols .cols--padding {
       padding: 0;
       padding-top: 28px; }
       .cols .cols--padding .cols--main--list {
         display: inline; }
     .cols .cols__search {
-      width: 50%; }
+      width: 100%; }
     .cols .cols__search--right {
+      text-align: center; }
+    .cols .cols__button--center {
       text-align: center; }
     .cols .cols__align__center {
       text-align: center; }
     .cols .cols__button {
-      margin-top: 15px; }
+      margin: 0; }
 
   footer {
     margin-top: 23px; }
@@ -594,6 +610,8 @@ footer {
     .moreInf .moreInf_right-side {
       background-color: #f5f6fa;
       margin-left: -15px; }
+      .moreInf .moreInf_right-side .right-side--margin {
+        margin-top: 0; }
       .moreInf .moreInf_right-side .right-side-headText {
         width: 100%;
         height: 106px;
@@ -660,20 +678,20 @@ footer {
   .cols {
     height: 735px; }
     .cols .cols__list li {
-      width: 50%; }
+      width: 33%; }
     .cols .cols--padding {
       padding: 0;
       padding-top: 28px; }
       .cols .cols--padding .cols--main--list {
         display: inline; }
     .cols .cols__search {
-      width: 50%; }
+      width: 100%; }
     .cols .cols__search--right {
       text-align: center; }
     .cols .cols__align__center {
       text-align: center; }
     .cols .cols__button {
-      margin-top: 15px; }
+      margin-top: 0; }
 
   footer {
     margin-top: 23px; }
@@ -689,7 +707,13 @@ footer {
 @media (min-width: 768px) and (max-width: 991.98px) {
   header .header_iphone {
     position: absolute;
-    top: 25px; }
+    top: 110px;
+    width: 100%; }
+  header .header_text {
+    width: 350px; }
+  header .nav-button {
+    margin-top: 15px;
+    width: 125px; }
 
   .powerApp .powerApp_text::before {
     position: absolute;
@@ -697,12 +721,12 @@ footer {
     top: 252px;
     left: 45%; }
   .powerApp .powerApp_cart {
-    margin-left: 60px;
     margin-bottom: 5px; }
 
   .stable__Ready .second__row--img {
     position: absolute;
-    left: 10%; }
+    left: 10%;
+    width: 100%; }
   .stable__Ready .second__row--list li {
     width: 100%; }
     .stable__Ready .second__row--list li p {
@@ -711,13 +735,20 @@ footer {
     width: 100%; }
 
   .android__iphone .android__iphone--white__image {
-    height: 278px;
+    height: 215px;
     position: absolute;
-    top: 215px;
+    top: 272px;
     left: 25px; }
+  .android__iphone .android__iphone--black__image {
+    height: 351px;
+    position: absolute;
+    top: 139px;
+    left: 93px; }
 
   .moreInf .moreInf_right-side .right-side-text {
     width: 100%; }
+  .moreInf .moreInf_right-side .right-side--margin {
+    margin-top: 0; }
 
   .available {
     height: 570px; }
@@ -768,7 +799,7 @@ footer {
   footer {
     background-color: #223047; }
     footer .footer__headtext {
-      font-size: 16px;
+      font-size: 12px;
       line-height: 50px;
       color: #00fff1;
       font-family: "Dosis";
@@ -848,5 +879,17 @@ footer {
         display: inline-block;
         margin-left: 25px;
         color: white; } }
+@media (min-width: 2560px) {
+  .stable__Ready .first__row .first__row__right {
+    text-align: left; }
+  .stable__Ready .second__row--img {
+    position: absolute;
+    left: 65%; }
+
+  footer .footer__headtext {
+    text-align: right; }
+  footer .footer__list {
+    text-align: center;
+    margin-top: 23px; } }
 
 /*# sourceMappingURL=style.css.map */
