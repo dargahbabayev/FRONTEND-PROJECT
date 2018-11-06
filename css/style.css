@@ -168,7 +168,8 @@ header {
   font-family: "Dosis"; }
 .stable__Ready .second__row--img {
   position: absolute;
-  left: 235px; }
+  left: 155px;
+  max-height: 500px; }
 .stable__Ready .second__row--list {
   list-style: none;
   background-color: none; }
@@ -176,17 +177,18 @@ header {
   display: table-cell;
   vertical-align: middle; }
 .stable__Ready .second__row--list li {
-  width: 542px;
+  width: 100%;
   height: 78px;
   box-shadow: 2px 3.464px 10px rgba(35, 39, 51, 0.1);
   margin-bottom: 40px;
   display: table; }
-  .stable__Ready .second__row--list li:hover {
-    width: 542px;
-    height: 137px;
-    box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
-    background-color: #00fff0;
-    transition-duration: 0.5s; }
+.stable__Ready .stable--active {
+  width: 542px;
+  max-height: 70px !important;
+  box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+  background-color: #00fff0;
+  transition-duration: 0.5s;
+  box-sizing: border-box; }
 .stable__Ready .second__row--list i {
   margin-left: 30px;
   font-size: 20px; }
@@ -206,7 +208,8 @@ header {
   line-height: 28px;
   color: #233148;
   font-family: "Dosis";
-  margin-left: 68px; }
+  margin-left: 68px;
+  display: none; }
 
 .android__iphone {
   height: 470px;
@@ -253,9 +256,9 @@ header {
   .android__iphone .android__iphone .android_iphone--headtext {
     margin-top: 140px; }
   .android__iphone .android__iphone--white__image {
-    height: 277px;
+    height: 273px;
     position: absolute;
-    top: 217px;
+    top: 220px;
     left: 43px; }
   .android__iphone .android__iphone--black__image {
     height: 359px;
@@ -270,6 +273,8 @@ header {
   .video img {
     margin-top: 10%;
     margin-bottom: 2%; }
+  .video .video__icon__back {
+    display: none; }
   .video .video--headtext {
     font-size: 17px;
     letter-spacing: 0px;
@@ -286,6 +291,13 @@ header {
     color: #ffffff;
     font-family: "Dosis";
     text-align: center; }
+  .video .modal-content {
+    border: 0;
+    background: transparent; }
+  .video .modal-body {
+    padding: 0; }
+    .video .modal-body iframe {
+      border: 0; }
 
 .join {
   background-position: center;
@@ -453,8 +465,10 @@ footer {
     line-height: 50px;
     color: #00fff1;
     font-family: "Dosis";
-    margin-top: 23px; }
+    margin-top: 23px;
+    text-align: right; }
   footer .footer__list {
+    padding-right: 30px;
     text-align: right;
     margin-top: 23px; }
     footer .footer__list li {
@@ -465,7 +479,7 @@ footer {
 
 @media (max-width: 575.98px) {
   header {
-    height: 590px; }
+    height: 450px; }
     header .header_iphone {
       display: none; }
     header .header_headText {
@@ -518,6 +532,11 @@ footer {
     margin-bottom: 80px; }
   .stable__Ready .first__row img {
     display: none; }
+  .stable__Ready .first__row .first__row--headtext {
+    text-align: left; }
+  .stable__Ready .first__row .first__row--text {
+    text-align: left;
+    width: 100%; }
   .stable__Ready .second__row--img {
     display: none; }
   .stable__Ready .second__row--list li {
@@ -528,9 +547,14 @@ footer {
   .android__iphone {
     height: 336px; }
     .android__iphone .android_iphone--headtext {
-      margin-top: 0px; }
+      margin-top: 0px;
+      text-align: left; }
+    .android__iphone .android_iphone--text {
+      width: 100%; }
     .android__iphone .android__iphone--imgs {
       display: none; }
+    .android__iphone .android_iphone--list {
+      text-align: left; }
 
   .video {
     height: 340px; }
@@ -617,7 +641,7 @@ footer {
         height: 106px;
         font-size: 50px; }
       .moreInf .moreInf_right-side .right-side-text {
-        width: 562px; }
+        width: 500px; }
 
   .stable__Ready .first__row--text {
     margin-bottom: 0px; }
@@ -770,8 +794,7 @@ footer {
       margin-right: 40px; }
     .available .available--button {
       position: absolute;
-      position: absolute;
-      left: 35%;
+      left: 22%;
       top: 45px; }
     .available .available--padding--list {
       list-style-type: none; }
@@ -781,7 +804,7 @@ footer {
   .cols {
     height: 735px; }
     .cols .cols__list li {
-      width: 50%; }
+      width: 33%; }
     .cols .cols--padding {
       padding: 0;
       padding-top: 28px; }

@@ -205,7 +205,8 @@ header {
     }
     .second__row--img {
         position: absolute;
-        left: 235px;
+        left: 155px;
+        max-height: 500px;
     }
     .second__row--list {
         list-style: none;
@@ -218,18 +219,25 @@ header {
         vertical-align: middle;
     }
     .second__row--list li {
-        width: 542px;
+        width: 100%;
         height: 78px;
         box-shadow: 2px 3.464px 10px rgba(35, 39, 51, 0.1);
         margin-bottom: 40px;
-        display: table;
-        &:hover {
-            width: 542px;
-            height: 137px;
-            box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
-            background-color: #00fff0;
-            transition-duration: 0.5s;
-        }
+        display: table; // &:hover {
+        //     width: 542px;
+        //     height: 80px;
+        //     box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+        //     background-color: #00fff0;
+        //     transition-duration: 0.5s;
+        // }
+    }
+    .stable--active {
+        width: 542px;
+        max-height: 70px !important;
+        box-shadow: 4px 6.928px 24px rgba(0, 255, 241, 0.5);
+        background-color: #00fff0;
+        transition-duration: 0.5s;
+        box-sizing: border-box;
     }
     .second__row--list i {
         margin-left: 30px;
@@ -253,6 +261,7 @@ header {
         color: #233148;
         font-family: "Dosis";
         margin-left: 68px;
+        display: none;
     }
 }
 
@@ -307,18 +316,16 @@ header {
         margin-top: 140px;
     }
     .android__iphone--white__image {
-        height: 277px;
+        height: 273px;
         position: absolute;
-        top: 217px;
+        top: 220px;
         left: 43px;
-    
     }
     .android__iphone--black__image {
         height: 359px;
         position: absolute;
         top: 131px;
         left: 155px;
-    
     }
 }
 
@@ -329,6 +336,9 @@ header {
     img {
         margin-top: 10%;
         margin-bottom: 2%;
+    }
+    .video__icon__back {
+        display: none;
     }
     .video--headtext {
         font-size: 17px;
@@ -347,6 +357,16 @@ header {
         color: #ffffff;
         font-family: "Dosis";
         text-align: center;
+    }
+    .modal-content {
+        border: 0;
+        background: transparent;
+    }
+    .modal-body {
+        padding: 0;
+        iframe {
+            border: 0;
+        }
     }
 }
 
@@ -546,8 +566,10 @@ footer {
         color: #00fff1;
         font-family: "Dosis";
         margin-top: 23px;
+        text-align: right;
     }
     .footer__list {
+        padding-right: 30px;
         text-align: right;
         margin-top: 23px;
         li {
@@ -563,7 +585,7 @@ footer {
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     header {
-        height: 590px;
+        height: 450px;
         .header_iphone {
             display: none;
         }
@@ -633,6 +655,13 @@ footer {
             img {
                 display: none;
             }
+            .first__row--headtext {
+                text-align: left;
+            }
+            .first__row--text {
+                text-align: left;
+                width: 100%;
+            }
         }
         .second__row--img {
             display: none;
@@ -650,9 +679,16 @@ footer {
         height: 336px;
         .android_iphone--headtext {
             margin-top: 0px;
+            text-align: left
+        }
+        .android_iphone--text {
+            width: 100%;
         }
         .android__iphone--imgs {
             display: none;
+        }
+        .android_iphone--list {
+            text-align: left;
         }
     }
     .video {
@@ -769,7 +805,7 @@ footer {
         .moreInf_right-side {
             background-color: #f5f6fa;
             margin-left: -15px;
-            .right-side--margin{
+            .right-side--margin {
                 margin-top: 0;
             }
             .right-side-headText {
@@ -778,7 +814,7 @@ footer {
                 font-size: 50px;
             }
             .right-side-text {
-                width: 562px;
+                width: 500px;
             }
         }
     }
@@ -965,20 +1001,19 @@ footer {
             top: 272px;
             left: 25px;
         }
-        .android__iphone--black__image{
+        .android__iphone--black__image {
             height: 351px;
-    position: absolute;
-    top: 139px;
-    left: 93px;
+            position: absolute;
+            top: 139px;
+            left: 93px;
         }
-        
     }
     .moreInf {
         .moreInf_right-side {
             .right-side-text {
                 width: 100%;
             }
-            .right-side--margin{
+            .right-side--margin {
                 margin-top: 0;
             }
         }
@@ -1007,8 +1042,7 @@ footer {
         }
         .available--button {
             position: absolute;
-            position: absolute;
-            left: 35%;
+            left: 22%;
             top: 45px;
         }
         .available--padding--list {
@@ -1022,7 +1056,7 @@ footer {
         height: 735px;
         .cols__list {
             li {
-                width: 50%;
+                width: 33%;
             }
         }
         .cols--padding {
